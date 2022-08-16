@@ -1,0 +1,49 @@
+/* Global */
+:root {
+  --color-white: #fff;
+  --color-green: lightgreen;
+  --color-red: #bb342f;
+  --bg-black: #000;
+  --bg-gray: #2e2f33;
+
+}
+
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-white);
+  background: linear-gradient(to left, #8942a8, #ba382f);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Local */
