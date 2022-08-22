@@ -1,49 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QH shop</title>
-    <!-- Roboto font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- BS 5.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="../../assets/css/style.css" />
-  </head>
 
-  <body>
-    <div class="container mt-3">
-      <h1>hey u</h1>
-      <p>
-        Nhớ tạo branch mới và code trên branch riêng nhé, pull code về trước khi code và push code lên thì báo tui với nhé! Thank you.
-      </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QH shop</title>
+  <!-- Roboto font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- BS 5.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+
+<body>
+  <!--Prods cart -->
+  <section class="prod-cart">
+    <div class="container">
+      <div class="prod-cart-content">
+        <div class="prod-cart-item">
+          <a href="#" class="prod-link" data-bs-target="#exampleModal" data-bs-toggle="modal">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+      </div>
     </div>
-    <!-- BS 5.1 -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../controllers/main.controller.js"></script>
-  </body>
+  </section>
+
+<!-- Modal -->
+<div class="modal fade cart-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Prods list -->
+  <section class="prods">
+    <div class="container">
+      <div class="prod-list row row-cols-xl-4 row-cols-lg-3 row-cols-md-2">
+        <div class="prod-item">
+          <div class="prod-top">
+            <div class="prod-top-item">
+              <p class="prod-top-icon"><i class="fa-brands fa-apple"></i></p>
+              <p class="prod-brand">Apple</p>
+            </div>
+            <div class="prod-img">
+              <img src="../../assets/img/macbook.png" alt="" />
+            </div>
+          </div>
+          <div class="prod-bottom">
+            <div class="prod-name">Iphone 11pro</div>
+            <div class="prod-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum tempore expedita labore harum perferendis sapiente architecto ipsam molestiae? Veritatis, voluptates?
+            </div>
+            <div class="prod-price">
+              <div class="prod-price-text">$400</div>
+              <button class="btn-prod-price">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="prod-item">
+          <div class="prod-top">
+            <div class="prod-top-item">
+              <p class="prod-top-icon"><i class="fa-brands fa-apple"></i></p>
+              <p class="prod-brand">Apple</p>
+            </div>
+            <div class="prod-img">
+              <img src="../../assets/img/air_pods.png" alt="" />
+            </div>
+          </div>
+          <div class="prod-bottom">
+            <div class="prod-name">Airpod pro</div>
+            <div class="prod-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum tempore expedita labore harum perferendis sapiente architecto ipsam molestiae? Veritatis, voluptates?
+            </div>
+            <div class="prod-price">
+              <div class="prod-price-text">$400</div>
+              <button class="btn-prod-price">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="prod-item">
+          <div class="prod-top">
+            <div class="prod-top-item">
+              <p class="prod-top-icon"><i class="fa-brands fa-apple"></i></p>
+              <p class="prod-brand">Apple</p>
+            </div>
+            <div class="prod-img">
+              <img src="../../assets/img/ipad.png" alt="" />
+            </div>
+          </div>
+          <div class="prod-bottom">
+            <div class="prod-name">Ipad pro</div>
+            <div class="prod-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum tempore expedita labore harum perferendis sapiente architecto ipsam molestiae? Veritatis, voluptates?
+            </div>
+            <div class="prod-price">
+              <div class="prod-price-text">$400</div>
+              <button class="btn-prod-price">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="prod-item">
+          <div class="prod-top">
+            <div class="prod-top-item">
+              <p class="prod-top-icon"><i class="fa-brands fa-apple"></i></p>
+              <p class="prod-brand">Apple</p>
+            </div>
+            <div class="prod-img">
+              <img src="../../assets/img/apple_watch.png" alt="" />
+            </div>
+          </div>
+          <div class="prod-bottom">
+            <div class="prod-name">Apple watch</div>
+            <div class="prod-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum tempore expedita labore harum perferendis sapiente architecto ipsam molestiae? Veritatis, voluptates?
+            </div>
+            <div class="prod-price">
+              <div class="prod-price-text">$400</div>
+              <button class="btn-prod-price">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- BS 5.1 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="../controllers/main.controller.js"></script>
+</body>
+
 </html>

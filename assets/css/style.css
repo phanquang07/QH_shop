@@ -3,8 +3,9 @@
   --color-white: #fff;
   --color-green: lightgreen;
   --color-red: #bb342f;
-  --bg-black: #000;
-  --bg-gray: #2e2f33;
+  --bg-black: #181818;
+  --bg-gray: #313234;
+  --btn-color: #1ec5e6;
 
 }
 
@@ -24,7 +25,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: var(--color-white);
-  background: linear-gradient(to left, #8942a8, #ba382f);
+  background: #949494
 }
 
 h1,
@@ -44,6 +45,132 @@ li {
 
 a {
   text-decoration: none;
+  display: block;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+i {
+  display: block;
 }
 
 /* Local */
+
+/* Cart */
+.prod-cart {
+  width: 100%;
+  height: 64px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-color: var(--btn-color);
+  opacity: 0.9;
+}
+
+.prod-cart-content {
+  line-height: 64px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.prod-cart-item a {
+  padding: 0 20px;
+  font-size: 26px;
+  color: var(--bg-black);
+}
+
+/* Cart modal */
+.btn-cart-modal  {
+  margin-top: 64px;
+}
+
+
+/* pods list */
+.prods {
+  margin-top: 64px;
+}
+
+.prod-item {
+  padding-top: 20px;
+}
+
+.prod-top {
+  padding: 10px 20px;
+  border-radius: 14px 14px 0 0;
+  overflow: hidden;
+  background-color: var(--bg-black);
+}
+
+.prod-img img {
+  height: 250px;
+  object-fit: contain;
+}
+
+.prod-top-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prod-top-icon {
+  font-size: 22px;
+}
+
+.prod-img {
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.prod-img:hover {
+  transform: scale(1.2);
+}
+
+.prod-bottom {
+  padding: 20px;
+  border-radius: 0 0 14px 14px;
+  overflow: hidden;
+  background-color: var(--bg-gray);
+}
+
+.prod-name {
+  color: var(--color-green);
+  font-size: 20px;
+}
+
+.prod-desc {
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.prod-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.prod-price-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-red);
+}
+
+.btn-prod-price {
+  border-radius: 4px;
+  padding: 0.4em 1em;
+  border: transparent;
+  color: var(--color-white);
+  background-color: var(--btn-color);
+  transition: all 0.2s ease-in;
+}
+
+.btn-prod-price:hover {
+  background-color: #207d90;
+}
