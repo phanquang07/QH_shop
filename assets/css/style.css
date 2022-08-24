@@ -67,27 +67,87 @@ i {
   top: 0;
   right: 0;
   z-index: 2;
-  background-color: var(--btn-color);
-  opacity: 0.9;
+  background-color: rgba(30, 197, 230, 0.9);
 }
 
-.prod-cart-content {
-  line-height: 64px;
+.prod-cart-icon {
+  height: 64px;
   display: flex;
   justify-content: flex-end;
-}
-
-.prod-cart-item a {
-  padding: 0 20px;
+  align-items: center;
   font-size: 26px;
   color: var(--bg-black);
 }
 
+.prod-cart-icon i {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
 /* Cart modal */
-.btn-cart-modal  {
+/* .btn-cart-modal {
   margin-top: 64px;
 }
 
+.modal-dialog {
+  margin: 0;
+  margin-left: auto;
+} */
+
+.cart-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.cart-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 3;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.cart-contents {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  right: -100%;
+  background-color: var(--bg-black);
+  opacity: 0.5;
+  z-index: 4;
+  transition: all 0.3s ease;
+}
+
+.active {
+  right: 0;
+  opacity: 1;
+}
+
+.cart-header h3 {
+  line-height: 64px;
+  text-align: center;
+}
+
+.cart-close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  padding: 10px;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cart-body {
+  padding: 30px;
+}
 
 /* pods list */
 .prods {
