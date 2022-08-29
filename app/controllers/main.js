@@ -19,22 +19,22 @@ function showTable(mangSP) {
     var content = "";
     mangSP.map(function (sp) {
         content += `
-          <div class='card'> 
-                <div class='top-bar'>      
+          <div class='cardteem'> 
+                <div class='top-icon'>      
                     <i class='fab fa-apple'></i>   
                     <em class="type">${sp.type}</em>
                 </div>
-                <div class='img-container'>
+                <div class='img'>
                     <img class='product-img' src='${sp.img}' alt='' />  
           
                 </div>
                
-                <div class='details'>  
-                    <div class='name-fav'>    
+                <div class='detail-title'>  
+                    <div class='name'>    
                         <strong class='product-name'>${sp.name}</strong>   
                         <button class='heart'><i class='fas fa-heart'></i></button> 
                     </div>   
-                    <div class='Parameter'>      
+                    <div class='Par'>      
                              
                         <p>${sp.desc}</p>  
                         <p>${sp.screen}</p>
@@ -42,7 +42,7 @@ function showTable(mangSP) {
                         <p>${sp.frontCamera}</p>
                     </div>  
                    
-                    <div class='purchase'>  
+                    <div class='pur'>  
                         <p class='product-price'>$ ${sp.price}</p>  
                         <span class='btn-add'></span>
                     </div> 
@@ -50,7 +50,7 @@ function showTable(mangSP) {
              </div>
         `;
     });
-    document.getElementById("itemCart").innerHTML = content;
+    document.getElementById("Cartitem").innerHTML = content;
 }
 
 
@@ -61,9 +61,9 @@ function showCart(){
     var content = "";
         content += `
           <div id='mincard'>
-                <div id="itemCart">
+                <div id="Cartitem">
                 </div>
-                <div class='nav'> 
+                <div class='nav-shop'> 
                     
                     <button><i class='fas fa-shopping-cart' style='font-size:3rem;'></i></button>\n    
                     <span class= 'total-qty'></span>
